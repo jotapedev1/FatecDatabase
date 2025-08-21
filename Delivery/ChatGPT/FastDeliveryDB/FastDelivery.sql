@@ -43,8 +43,8 @@ CREATE TABLE veiculo(
 CREATE TABLE motorista(
     id_motorista INT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    email VARCHAR(100),
-    telefone VARCHAR(15),
+    email VARCHAR(100) NOT NULL,
+    telefone VARCHAR(15) NOT NUL,
     cnh VARCHAR(20) NOT NULL,
     cpf VARCHAR(11) NOT NULL
 );
@@ -85,6 +85,7 @@ CREATE TABLE pagamento(
 CREATE TABLE encomenda(
     id_encomenda INT PRIMARY KEY,
     id_entrega INT NOT NULL,
+    valor_declarado INT NOT NULL,
     descricao VARCHAR(200),
     peso_kg FLOAT,
     altura_cm FLOAT,
