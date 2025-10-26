@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS teste;
-CREATE DATABASE teste;
-USE teste;
+DROP DATABASE IF EXISTS FastDeliveryDB;
+CREATE DATABASE FastDeliveryDB;
+USE FastDeliveryDB;
 
 -- =======================
 -- TABELA CLIENTE
